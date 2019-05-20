@@ -1,46 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <title>Sandwich Generator</title>
-    <link rel="icon" type="image/gif/png" href="Images/icon.png">
-  <head>
-    	<script type="text/javascript" src="JS/randomizer.js"></script>
-
-      <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
-<!--CSS for the website-->
-      <style>
-        body {
-          background-color: #2E3136;
-      }
-    </style>
-
-  </head>
-<body>
-
-<div class="header">
-
-Sandwich Generator
-
-</div>
-
-<div class="about">
-
-Welcome to my sandwich generator! Simply press "Generate" and you'll have to eat whatever it gives you. ( In sandwich form )
-
-</div>
-
-<div class="body">
-
-<button class="button" onclick="shit ()">Generate</button>
-
-<div class="spacer">
-
-<div class="container">
-
-<p id="1">Output goes here!</p>
-<p id="2"></p>
-<p id="3"></p>
-<p id="4"></p>
-
-
-</div>
-</div>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <!--meta-->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!--style-->
+      <link rel="stylesheet" type="text/css" href="CSS/style.css">
+   </head>
+   <body>
+      <div class="center">
+         <div class="jumbotron">
+            <h1>The Round Table</h1>
+            <p>Welcome to the round table! This is a turn based murder mystery game thing.. it is a work in progress though</p>
+         </div>
+         <div class="container">
+            <form method="get" action="HTML/mafia.html">
+               <button class="butn" type="submit">Play against AI</button>
+            </form>
+            <center>
+               <div class="note">
+                  <p>NOTE: Not all browsers support auto-redirect. I have not tested my game on any of those browsers. If you have one of those browsers, I'd recommend Google Chrome of Firefox.
+                  <h1>Dev Tools</h1>
+                  <a href="HTML/confirmedMafia.html">instant mafia</a>
+                  <br>
+                  <a href="HTML/mafia.html">instant innocent</a>
+            </center>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
