@@ -32,3 +32,8 @@ div.note {
 }
 .container {
   padding: 30px;
+}
+@font-face {
+    font-family: 'modern2';
+    src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
+  }
