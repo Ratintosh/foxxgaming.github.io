@@ -38,9 +38,6 @@ div.note {
     src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
   }
 
-  p.a {
-    font-size: 50px;
-  }
 
   @font-face {
       font-family: 'modern1';
@@ -49,4 +46,8 @@ div.note {
       font-weight: normal;
       font-style: normal;
 
+  }
+
+  p.a {
+    font-size: 50px;
   }
