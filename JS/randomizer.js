@@ -14,6 +14,9 @@ var myArray = [
   "Eggs",
   "Pepper",
   "Lettuce",
+  "Ham",
+  "Turkey",
+  "Olives"
 ];
 //randomizer
 var food1 = myArray[Math.floor(Math.random()*myArray.length)];
