@@ -12,23 +12,26 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <!--style-->
       <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
-      <link rel="icon" type="image/gif/png" href="Images/homepage.png">
-<!--Manual CSS-->
-
       <style>
-      hr.spacer {
-        border: 0px solid #121c27;
-      }
+      /* Gradient color1 - color2 - color1 */
 
-      </style>
+      /* Gradient transparent - color - transparent */
+
+      hr.singing {
+          border: 0;
+          height: 1px;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      }
+</style>
 
 
    </head>
    <body>
       <div class="center">
          <div class="jumbotron">
-            <h1>FoxxGaming</h1>
-            <p>Welcome to my website. Here, i'll post things that I am working on. Enjoy!</p>
+            <img src="Images/koorigitsune.fQ9" width="150px"alt="KOORIGITSUNE">
+<hr class="singing">
+            <p>Formally known as FoxxGaming!</p>
          </div>
          <div class="container">
 <font face="modern2">
@@ -37,11 +40,6 @@
            </div>
             <form method="get" action="Projects/gen.html">
                <button class="butn" type="submit">Sandwich Generator</button>
-            </form>
-            <hr class="spacer">
-            <form method="get" action="Projects/cr.htm">
-               <button class="butn" type="submit">Crossy Road</button>
-               <p>All rights belong to Hipster Whale</p>
             </form>
             </div>
    </body>
