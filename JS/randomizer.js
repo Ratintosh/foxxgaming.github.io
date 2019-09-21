@@ -22,6 +22,7 @@ var myArray = [
 
 
 function shit() {
+  
   var food1 = myArray[Math.floor(Math.random()*myArray.length)];
   var food2 = myArray[Math.floor(Math.random()*myArray.length)];
   var food3 = myArray[Math.floor(Math.random()*myArray.length)];
