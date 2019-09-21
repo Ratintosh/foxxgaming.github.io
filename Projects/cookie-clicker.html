@@ -65,7 +65,9 @@ padding-bottom: 50px;
 
 <script>
 
-
+window.onbeforeunload = function() {
+    return true;
+};
 
 Points=0
 Pointsperclick=1
