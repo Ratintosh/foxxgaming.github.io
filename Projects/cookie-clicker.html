@@ -44,6 +44,11 @@ padding-bottom: 30px;
 
 <script>
 
+// Enable navigation prompt
+window.onbeforeunload = function() {
+    return true;
+};
+
 Points=0
 Pointsperclick=1
 
