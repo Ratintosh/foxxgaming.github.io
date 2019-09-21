@@ -1,0 +1,76 @@
+<!Doctype HTML>
+<html>
+<head>
+    <style>
+    
+.cookie-pos {
+
+    text-align: center;
+    padding-top: 30px;
+
+}
+.text {
+
+text-align: center;
+
+}
+.money-pos {
+
+text-align: center;
+padding-bottom: 30px;
+
+}
+    
+    </style>
+</head>
+<body>
+ <div class="text"> 
+<h1>Click the cookie below to earn money!</h1>
+
+
+
+ </div>
+<div class="cookie-pos">
+<img id="cookie" src="../Images/cookie.png" height="400" width="400" onclick="myFunction()">
+</div>
+
+<div class="money-pos">
+    <h1>Money:</h1>
+    <br>
+    <h1 id="money">0</h1>
+</div>
+<p1>Task: Get to $100!</p1> <button>Complete!</button>
+
+
+<script>
+
+Points=0
+Pointsperclick=1
+
+function myFunction() {
+    Points=Points+Pointsperclick
+  document.getElementById("money").innerHTML = +Points
+
+
+  var theImg = document.getElementById('cookie');
+theImg.width = 360;
+setTimeout(function(){
+    theImg.height = 400;
+    theImg.width = 400;
+    }, 100);
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>    
+</html>
