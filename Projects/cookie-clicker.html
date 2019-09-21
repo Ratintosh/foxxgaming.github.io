@@ -1,114 +1,83 @@
 <!Doctype HTML>
 <html>
-<head>
-    <style>
-
-@font-face {
-    font-family: 'modern2';
-    src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
-  }
-
-
-
-
-        .bg {
-        background-color: #2E3136;
-
-
-        }
-
-.cookie-pos {
-
-    text-align: center;
-    padding-top: 30px;
-
-}
-.text {
-
-text-align: center;
-  text-align: center;
-  font-family: 'modern2';
-  font-size: 15;
-  color: #ebebeb;
-
-}
-.money-pos {
-
-text-align: center;
-padding-bottom: 50px;
-  text-align: center;
-  font-family: 'modern2';
-  font-size: 18px;
-  color: #ebebeb;
-}
-    
-    </style>
-</head>
-<body class="bg">
- <div class="text"> 
-<h1>Click the cookie below to earn money!</h1>
-
-
-
- </div>
-<div class="cookie-pos">
-<img id="cookie" src="../Images/cookie.png" height="400" width="400" onclick="myFunction()">
-</div>
-
-<div class="money-pos">
-    <h1>Money:</h1>
-    <br>
-    <h1 id="money">0</h1>
-</div>
-
-
-
-<script>
-
-window.onbeforeunload = function() {
-    return true;
-};
-
-Points=0
-Pointsperclick=1
-
-function myFunction() {
-    Points=Points+Pointsperclick
-  document.getElementById("money").innerHTML = +Points
-
-
-  var theImg = document.getElementById('cookie');
-theImg.width = 360;
-setTimeout(function(){
-    theImg.height = 400;
-    theImg.width = 400;
-    }, 100);
-
-
-}
-
-
-
-
-
-</script>
-
-
-
-
-
-</body>    
+   <head>
+      <style>
+         @font-face {
+         font-family: 'modern2';
+         src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
+         }
+         .bg {
+         background-color: #2E3136;
+         }
+         html, body {margin: 0; height: 100%; overflow: hidden}
+         .cookie-pos {
+         text-align: center;
+         padding-top: 30px;
+         }
+         .text {
+         text-align: center;
+         text-align: center;
+         font-family: 'modern2';
+         font-size: 15;
+         color: #ebebeb;
+         }
+         .money-pos {
+         text-align: center;
+         padding-bottom: 50px;
+         text-align: center;
+         font-family: 'modern2';
+         font-size: 18px;
+         color: #ebebeb;
+         }
+      </style>
+   </head>
+   <body class="bg">
+      <div class="text">
+         <h1>Click the cookie below to earn money!</h1>
+      </div>
+      <div class="cookie-pos">
+         <img id="cookie" src="../Images/cookie.png" height="400" width="400" onclick="myFunction()">
+      </div>
+      <div class="money-pos">
+         <h1>Money:</h1>
+         <br>
+         <h1 id="money">0</h1>
+      </div>
+      <script>
+         window.onbeforeunload = function() {
+             return true;
+         };
+         
+         Points=0
+         Pointsperclick=1
+         
+         function myFunction() {
+             Points=Points+Pointsperclick
+           document.getElementById("money").innerHTML = +Points
+         
+         
+           var theImg = document.getElementById('cookie');
+         theImg.width = 360;
+         setTimeout(function(){
+             theImg.height = 400;
+             theImg.width = 400;
+             }, 100);
+         
+         
+         }
+         
+         
+         
+         
+         
+      </script>
+   </body>
 </html>
-
-
 <!--
-
-
-
-// Enable navigation prompt
-window.onbeforeunload = function() {
-    return true;
-};
-
-
--->
+   // Enable navigation prompt
+   window.onbeforeunload = function() {
+       return true;
+   };
+   
+   
+   -->
