@@ -2,7 +2,21 @@
 <html>
 <head>
     <style>
-    
+
+@font-face {
+    font-family: 'modern2';
+    src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
+  }
+
+
+
+
+        .bg {
+        background-color: #2E3136;
+
+
+        }
+
 .cookie-pos {
 
     text-align: center;
@@ -12,18 +26,25 @@
 .text {
 
 text-align: center;
+  text-align: center;
+  font-family: 'modern2';
+  font-size: 15;
+  color: #ebebeb;
 
 }
 .money-pos {
 
 text-align: center;
-padding-bottom: 30px;
-
+padding-bottom: 50px;
+  text-align: center;
+  font-family: 'modern2';
+  font-size: 18px;
+  color: #ebebeb;
 }
     
     </style>
 </head>
-<body>
+<body class="bg">
  <div class="text"> 
 <h1>Click the cookie below to earn money!</h1>
 
@@ -39,15 +60,12 @@ padding-bottom: 30px;
     <br>
     <h1 id="money">0</h1>
 </div>
-<p1>Task: Get to $100!</p1> <button>Complete!</button>
+
 
 
 <script>
 
-// Enable navigation prompt
-window.onbeforeunload = function() {
-    return true;
-};
+
 
 Points=0
 Pointsperclick=1
@@ -79,3 +97,16 @@ setTimeout(function(){
 
 </body>    
 </html>
+
+
+<!--
+
+
+
+// Enable navigation prompt
+window.onbeforeunload = function() {
+    return true;
+};
+
+
+-->
