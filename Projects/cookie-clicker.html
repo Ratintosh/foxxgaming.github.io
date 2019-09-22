@@ -5,6 +5,44 @@
         <link rel="icon" type="image/gif/png" href="../Images/cookie.png">
       <style>
           
+          .btn {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #e0e0e0));
+	background:-moz-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+	background:-webkit-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+	background:-o-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+	background:-ms-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+	background:linear-gradient(to bottom, #fafafa 5%, #e0e0e0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#e0e0e0',GradientType=0);
+	background-color:#fafafa;
+	-moz-border-radius:13px;
+	-webkit-border-radius:13px;
+	border-radius:13px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:modern2;
+	font-size:20px;
+	padding:5px 76px;
+	text-decoration:none;
+}
+.btn:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e0e0e0), color-stop(1, #fafafa));
+	background:-moz-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+	background:-webkit-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+	background:-o-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+	background:-ms-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+	background:linear-gradient(to bottom, #e0e0e0 5%, #fafafa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#fafafa',GradientType=0);
+	background-color:#e0e0e0;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+
          @font-face {
          font-family: 'modern2';
          src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
@@ -37,6 +75,7 @@
    <body class="bg">
       <div class="text">
          <h1>Click the cookie below to earn money!</h1>
+<a href="#" id="fuck" class="btn" onclick="purchase()">Sad Cookie - $100</a>
       </div>
       <div class="cookie-pos">
          <img id="cookie" src="../Images/cookie.png" height="400" width="400" onclick="myFunction()">
@@ -51,7 +90,7 @@
              return true;
          };
          
-         Points=0
+         Points=90
          Pointsperclick=1
          
          function myFunction() {
@@ -69,7 +108,23 @@
          
          }
          
-         
+         function purchase() {
+            if (Points>99) {
+               document.getElementById('fuck').innerHTML = "Purchased! You get no perks, just a sad looking cookie."
+               Points=Points-100
+               document.getElementById('money').innerHTML = Points
+
+               document.getElementById('cookie').src='../Images/sadcookie.png'
+
+            } else{
+               document.getElementById('fuck').innerHTML = "Not enough money!"
+               setTimeout(function(){
+                  document.getElementById('fuck').innerHTML = "Sad Cookie - $100"
+             }, 1000);
+            }
+
+
+         }
          
          
          
