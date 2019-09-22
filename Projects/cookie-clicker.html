@@ -90,7 +90,7 @@
              return true;
          };
          
-         Points=90
+         Points=0
          Pointsperclick=1
          
          function myFunction() {
@@ -110,12 +110,12 @@
          
          function purchase() {
             if (Points>99) {
-               document.getElementById('fuck').innerHTML = "Purchased! You get no perks, just a sad looking cookie."
+               document.getElementById('fuck').innerHTML = "Purchased! You now get twice the money. Yay!"
                Points=Points-100
                document.getElementById('money').innerHTML = Points
 
                document.getElementById('cookie').src='../Images/sadcookie.png'
-
+               Pointsperclick=2
             } else{
                document.getElementById('fuck').innerHTML = "Not enough money!"
                setTimeout(function(){
