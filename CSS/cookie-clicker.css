@@ -1,0 +1,87 @@
+          
+          .btn {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #e0e0e0));
+            background:-moz-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+            background:-webkit-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+            background:-o-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+            background:-ms-linear-gradient(top, #fafafa 5%, #e0e0e0 100%);
+            background:linear-gradient(to bottom, #fafafa 5%, #e0e0e0 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#e0e0e0',GradientType=0);
+            background-color:#fafafa;
+            -moz-border-radius:13px;
+            -webkit-border-radius:13px;
+            border-radius:13px;
+            display:inline-block;
+            cursor:pointer;
+            color:#000000;
+            font-family:modern2;
+            font-size:20px;
+            padding:5px 76px;
+            text-decoration:none;
+        }
+        .btn:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e0e0e0), color-stop(1, #fafafa));
+            background:-moz-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+            background:-webkit-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+            background:-o-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+            background:-ms-linear-gradient(top, #e0e0e0 5%, #fafafa 100%);
+            background:linear-gradient(to bottom, #e0e0e0 5%, #fafafa 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#fafafa',GradientType=0);
+            background-color:#e0e0e0;
+        }
+        .btn:active {
+            position:relative;
+            top:1px;
+        }
+        
+                
+        
+        
+                 @font-face {
+                 font-family: 'modern2';
+                 src: url('../Fonts/aspergit_light-webfont.woff2') format('woff2');
+                 }
+                 .bg {
+                 background-color: #2E3136;
+                 }
+        
+        
+                 .cookie-pos {
+                 text-align: left;
+                 padding-top: 30px;
+                 padding-left: 230px;
+                 }
+                 .text {
+                 text-align: center;
+                 text-align: center;
+                 font-family: 'modern2';
+                 font-size: 15;
+                 color: #ebebeb;
+                 }
+                 .money-pos {
+                 text-align: center;
+                 padding-bottom: 50px;
+                 text-align: center;
+                 font-family: 'modern2';
+                 font-size: 18px;
+                 color: #ebebeb;
+                 }
+
+
+                div.shop{
+                    position: absolute;
+                    z-index: -1;
+                    top: 170px;
+                    right: 400px;
+                    font-family: 'modern2';
+
+
+                }
+                 div.shopcontainer {
+                    width: 300px;
+                    height: auto;
+                    background-color: #232529;
+                    border: 0px;
+                    padding: 30px;
+                    text-align: center;
+                  }
