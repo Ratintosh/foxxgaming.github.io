@@ -3,8 +3,10 @@
 color: white;
 }
 .jumbotron{
-margin-top: 0px;
-background-color: black;
+
+    background-image: url("../Images/header.gif");
+    background-size: cover;
+    background-color: black;
 }
   body {
     background-color: #141d26;
@@ -51,3 +53,62 @@ div.note {
   p.a {
     font-size: 50px;
   }
+
+  * {box-sizing: border-box;}
+  
+
+
+  /* ====== BELOW IS NAVBAR ====== */
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 13px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: rgb(18, 18, 18);;
+  color: white;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
